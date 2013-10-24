@@ -1,2 +1,79 @@
-'Final Project
-'Visual Basic
+'Arnaldo Rojas
+'Preston DeLong
+'Final Project - Baseball App
+
+'Importing the Input Output library
+Imports System.IO
+
+Public Class baseballAppForm
+    'Global variables for the team statistics
+    'Dim m_total hits, m_totaldoubles...
+    'Dim m_totalbases...
+
+    Private Sub baseballAppForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'When the form load would read from a file to fill the existing players & stats
+        'Event handlers disabled: Edit, Update, delete, and the playerStatGroupBox
+    End Sub 'baseballAppForm_Load
+
+    Private Sub addPlayer_Click(sender As Object, e As EventArgs) Handles addPlayer.Click
+        'Dim player As String
+        'player = nameTextBox.Text
+
+        'If player name is not the comboBox Then
+        'show error message that player exists
+        'MessageBox.Show(player & " already exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        'Else
+        'playersListComboBox.Items.Add(player)
+        'Add player name and jersey number to the list
+        'End If
+
+        'Players update statistics will be enable
+    End Sub 'addPlayer_Click
+
+    Private Sub showStatButton_Click(sender As System.Object, e As System.EventArgs) Handles showStatButton.Click
+        'sub procedures for the stats will be calculated
+        'Players and Team statistics will be displey in their listboxes
+    End Sub 'showStatButton_Click
+
+    Private Sub editPlayer_Click(sender As System.Object, e As System.EventArgs) Handles editPlayer.Click
+        'if a player is selected from the combobox list, button edit will be enable
+        'also update stats will be enable to enter the new stats
+        'changes will be written to the file
+    End Sub 'editPlayer_Click
+
+    Private Sub deletePlayer_Click(sender As System.Object, e As System.EventArgs) Handles deletePlayer.Click
+        'if a player is selected from the combobox list, button delete will be enable
+        'player selected will be deleted from the combobox and from the file
+    End Sub 'deletePlayer_Click
+
+    Private Sub updateButton_Click(sender As System.Object, e As System.EventArgs) Handles updateButton.Click
+        'update button will change the statistics from the players entered or selected
+        'saving it to a file and showing it to the listboxes
+    End Sub 'updateButton_Click
+
+    Private Sub totalBases()
+        'Total bases = H + 2B + 3B*2 + HR*3
+    End Sub 'totalBases
+
+    Private Sub battingAverage()
+        'Batting Average = H / AB
+    End Sub 'battingAverage
+
+    Private Sub onBasePercentage()
+        'On-Base Percentage = (H + BB) / (AB + BB)
+    End Sub 'onBasePercentage
+
+    Private Sub sluggingPercentage()
+        'Slugging Percentage = TB / AB
+    End Sub 'sluggingPercentage
+
+    Private Sub onbasePlusSlugging()
+        'On-Base Plus Slugging = OBP + SLG
+    End Sub 'onbasePlusSlugging
+
+    Private Sub teamStats()
+        'Calculate and Show average team stats from all players statistics
+        'DisplayStatistics to the team stats listbox
+    End Sub 'teamStats
+
+End Class 'baseballAppForm
